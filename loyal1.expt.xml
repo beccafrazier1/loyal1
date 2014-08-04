@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<!-- All yellow text is commenting to explain code -->
+<Study id="Noseklab.bfrazier.loyal1" datagroup="research">
+    <Definitions>
+        <Task id="startpage">/common/en-us/html/Instructions.jsp</Task>
+        <Task id="consent">consent.html</Task>
+        <Task id="realstart">realstartskip.htm</Task>
+       
+        <Task id="politics">politics.jsp</Task>
+        
+        <Task id="lowfam1">lowfam1.html</Task>
+        <Task id="lowfam2">lowfam2.html</Task>
+        <Task id="highfam1">highfam1.html</Task>
+        <Task id="highfam2">highfam2.html</Task>
+        
+        <Task id="lowdefect1">lowdefect1.html</Task>
+        <Task id="lowdefect2">lowdefect2.html</Task>
+        <Task id="highdefect1">highdefect1.html</Task>
+        <Task id="highdefect2">highdefect2.html</Task>
+   
+        <Task id="lowwhistle1">lowwhistle1.html</Task>
+        <Task id="lowwhistle2">lowwhistle2.html</Task>
+        <Task id="highwhistle1">highwhistle1.html</Task>
+        <Task id="highwhistle2">highwhistle2.html</Task>   
+        
+        <Task id="lowteam1">lowteam1.html</Task>
+        <Task id="lowteam2">lowteam2.html</Task>
+        <Task id="highteam1">highteam1.html</Task>
+        <Task id="highteam2">highteam2.html</Task>  
+
+        
+        <Task id="eval1">eval1.jsp</Task>
+        <Task id="eval2">eval2.jsp</Task>
+        
+        <Task id="demographics">demographics.jsp</Task>
+        
+        <Task id="compcode">compcode.jsp</Task>
+        
+        <Task id="last">lastpage.htm</Task>
+        <Task id="debriefing">debriefing.jsp</Task>
+        
+    </Definitions>
+    <Map>
+        <Task id="startpage"/>
+        <Task id="consent"/>
+        <Task id="realstart"/>
+        <Task id="politics"/>
+        <Branch id="condition" type="group" random="true" select="1">
+            <Branch id="cond1a" type="group">
+                        <Task id="lowfam1"/>
+                        <Task id="eval1"/>
+                        <Task id="highdefect2"/>
+                        <Task id="eval2"/>
+            </Branch>
+            <Branch id="cond1b" type="group">
+                        <Task id="highdefect1"/>
+                        <Task id="eval1"/>
+                        <Task id="lowfam2"/>
+                        <Task id="eval2"/>
+            </Branch>
+            <Branch id="cond2a" type="group">
+                        <Task id="highfam1"/>
+                        <Task id="eval1"/>
+                        <Task id="lowdefect2"/>
+                        <Task id="eval2"/>
+            </Branch>
+            <Branch id="cond2b" type="group">
+                        <Task id="lowdefect1"/>
+                        <Task id="eval1"/>
+                        <Task id="highfam2"/>
+                        <Task id="eval2"/>
+            </Branch>
+            <Branch id="cond3a" type="group">
+                        <Task id="lowwhistle1"/>
+                        <Task id="eval1"/>
+                        <Task id="highteam2"/>
+                        <Task id="eval2"/>
+            </Branch>
+            <Branch id="cond3b" type="group">
+                        <Task id="highteam1"/>
+                        <Task id="eval1"/>
+                        <Task id="lowwhistle2"/>
+                        <Task id="eval2"/>
+            </Branch>
+            <Branch id="cond4a" type="group">
+                        <Task id="highwhistle1"/>
+                        <Task id="eval1"/>
+                        <Task id="lowteam2"/>
+                        <Task id="eval2"/>
+            </Branch>
+            <Branch id="cond4b" type="group">
+                        <Task id="lowteam1"/>
+                        <Task id="eval1"/>
+                        <Task id="highwhistle2"/>
+                        <Task id="eval2"/>
+            </Branch>
+        </Branch>
+        <Task id="demographics"/>
+        <Task id="compcode"/>
+        <Task id="last"/>
+        <Task id="debriefing"/>
+    </Map>
+</Study>
+
